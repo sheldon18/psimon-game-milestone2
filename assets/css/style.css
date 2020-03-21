@@ -1,4 +1,13 @@
 body {
-  background-image: url("/assets/images/psimon-background.jpg");
+  background-image: url("https://i.postimg.cc/XNdbSVfh/psimon-background.jpg");
   background-position: center;
 }
+
+.mainBoard {
+  margin: 0px auto;
+  border: 15px gray solid;
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+}
+
