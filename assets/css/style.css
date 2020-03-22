@@ -18,7 +18,7 @@ body {
   width: 300px;
   height: 300px;
   margin: 0;
-  border: 5px solid black;
+  border: 5px black solid;
   float: left;
 }
 
@@ -48,7 +48,48 @@ body {
   background-color: white;
   border: 20px black solid;
   position: absolute;
-  margin-top: 167px;
-  margin-left: 167px;
-  border-radius: 167px;
+  margin-top: 165px;
+  margin-left: 165px;
+  border-radius: 165px;
 }
+
+.start {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 96px;
+  margin-left: 13px;
+  border: 5px black solid;
+  line-height: 50px;
+  border-radius: 50px;
+}
+
+.score {  
+  background-color: black;
+  color: red;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  margin-left: 99px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 45px;
+}
+
+.strict {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: -210px;
+  margin-left: 179px;
+  border: 5px black solid;
+  line-height: 50px;
+  border-radius: 50px;
+}
+
+
