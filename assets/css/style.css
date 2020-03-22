@@ -1,15 +1,16 @@
 body {
-  background-image: url("https://i.postimg.cc/XNdbSVfh/psimon-background.jpg");
+  background-image: none;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mainBoard {
   margin: 0px auto;
-  border: 9px black solid;
+  margin-top: 50px;
+  border: 15px black solid;
+  border-radius: 620px;
   width: 620px;
   height: 620px;
-  border-radius: 620px;
 }
 
 
@@ -23,20 +24,31 @@ body {
 
 .red {
   background-color: red;
-  border-radius: 300px 0 0 0;
+  border-radius: 310px 0 0 0;
 }
 
 .blue {
   background-color: blue;
-  border-radius: 0 300px 0 0;
+  border-radius: 0 310px 0 0;
 }
 
 .green {
   background-color: green;
-  border-radius: 0 0 0 300px;    
+  border-radius: 0 0 0 310px;    
 }
 
 .yellow {
   background-color: yellow;
-  border-radius: 0 0 300px 0;
+  border-radius: 0 0 310px 0;
+}
+
+.controlBoard {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border: 20px black solid;
+  position: absolute;
+  margin-top: 167px;
+  margin-left: 167px;
+  border-radius: 167px;
 }
