@@ -74,7 +74,7 @@ body {
   height: 50px;
   margin: 0px;
   margin-left: -81px;
-  border: solid 2px black;
+  border: 2px black solid;
   border-radius: 10px;
   font-size: 45px;
   line-height: 51px;
@@ -99,3 +99,24 @@ body {
 }
 
 
+.switch-container {
+  margin-top: -70px;
+  margin-left: 50px;
+}
+
+.outer-switch {
+  width: 60px;
+  height: 32px;
+  background-color: black;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+.inner-switch {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  margin: 1px;
+  border-radius: 7px;
+  position: relative;
+}
