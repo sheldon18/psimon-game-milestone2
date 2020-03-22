@@ -25,22 +25,22 @@ body {
 }
 
 .red {
-  background-color: red;
+  background-color: darkred;
   border-radius: 310px 0 0 0;
 }
 
 .blue {
-  background-color: blue;
+  background-color: darkblue;
   border-radius: 0 310px 0 0;
 }
 
 .green {
-  background-color: green;
+  background-color: darkgreen;
   border-radius: 0 0 0 310px;    
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #f9c70c;
   border-radius: 0 0 310px 0;
 }
 
@@ -135,4 +135,20 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: black;
+}
+
+.red-on {
+  background-color: red !important;
+}
+
+.blue-on {
+  background-color: blue !important;
+}
+
+.green-on {
+  background-color: green !important;
+}
+
+.yellow-on {
+  background-color: yellow !important;
 }
