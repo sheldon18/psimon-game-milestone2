@@ -51,6 +51,8 @@ body {
   margin-top: 165px;
   margin-left: 165px;
   border-radius: 165px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 .start {
@@ -100,8 +102,8 @@ body {
 
 
 .switch-container {
-  margin-top: -70px;
-  margin-left: 50px;
+  margin-top: -77px;
+  margin-left: 51px;
 }
 
 .outer-switch {
@@ -119,4 +121,14 @@ body {
   margin: 1px;
   border-radius: 7px;
   position: relative;
+}
+
+
+.gameName {
+  font-size: 40px;
+  margin-top: 33px;
+  margin-left: 46px;
+  margin-bottom: -79px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
