@@ -59,8 +59,8 @@ body {
   width: 50px;
   height: 50px;
   text-align: center;
-  margin: 96px;
-  margin-left: 13px;
+  margin: 97px;
+  margin-left: 20px;
   border: 5px black solid;
   line-height: 50px;
   border-radius: 50px;
@@ -73,10 +73,11 @@ body {
   width: 50px;
   height: 50px;
   margin: 0px;
-  margin-left: 99px;
+  margin-left: -81px;
   border: solid 2px black;
   border-radius: 10px;
   font-size: 45px;
+  line-height: 51px;
 }
 
 .strict {
@@ -85,11 +86,16 @@ body {
   width: 50px;
   height: 50px;
   text-align: center;
-  margin: -210px;
-  margin-left: 179px;
+  margin: 0px;
+  margin-left: 15px;
   border: 5px black solid;
   line-height: 50px;
   border-radius: 50px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
