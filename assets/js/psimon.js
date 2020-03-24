@@ -1,37 +1,47 @@
 //variables
-userSequence = [];
-gameSequence = [];
+playerSequence = [];
+compSequence = [];
 var id, color, level = 0;
 
 $(document).ready(function() {
     $(".start").click(function() {
         level++;
-        playSequence();
+        compSequence();
     });
+    
+    $(".button").click(function() {
+        id= $(this).attr("id");
+        color = $(this).attr("class").split(" ")[0];
+        addClass(id, color);
+    });
+    
+    
 });
 
 
-function playSequence () {
+function compSequence () {
     console.log(level);
     $(".score").text(level);
     getRandomNum();
     var p = 0;
     var myInterval = setInterval(function() {
-        id = gameSequence[p];
-        color = $("#"+id).attr("class").split(" ")[1];
+        id = compSequence[p];
+        color = $("#"+id).attr("class").split(" ")[0];
         console.log(id+" "+color);
         addClass(id, color);
         p++;
-        if(p == gameSequence.length) {
+        if(p == compSequence.length) {
           clearInterval(myInterval);
+          
         }
+        
     }, 1000);
 }
 
 
 function getRandomNum() {
     var random = Math.floor(Math.random() * 4);
-    gameSequence.push(random);
+    compSequence.push(random);
 }
 
 function addClass(id, color) {
