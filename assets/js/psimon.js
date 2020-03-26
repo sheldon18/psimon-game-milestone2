@@ -3,8 +3,25 @@ playerSeq = [];
 compSeq = [];
 const NUMBER_OF_LEVELS = 20;
 var id, color, level = 0;
+var playSwitch = false;
+
 
 $(document).ready(function() {
+    $(".switch").click(function() {    
+        playSwitch = (playSwitch == false) ? true : false;
+        console.log(playSwitch);
+        if(playSwitch) {
+          $(".inner-switch").addClass("inner-off");
+          $(".switch").addClass("outer-on");
+          $(".score").text("00")
+        }
+        else {
+          $(".inner-switch").removeClass("inner-off");
+          $(".switch").removeClass("outer-on");
+          $(".score").text("--");
+        }    
+    })
+  
     $(".start").click(function() {
         level++;
         compSequence();

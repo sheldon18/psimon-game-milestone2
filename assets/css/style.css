@@ -120,8 +120,9 @@ body {
 .inner-switch {
   width: 30px;
   height: 30px;
-  background-color: green;
+  background-color: red;
   margin: 1px;
+  margin-left: 29px;
   border-radius: 7px;
   position: relative;
 }
@@ -152,3 +153,18 @@ body {
 .yellow-on {
   background-color: #FFFF00 !important;
 }
+
+
+.outer-on {
+  background-color: black !important;
+}
+
+.inner-off {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  margin: 1px;
+  border-radius: 7px;
+  position: relative;
+}
+
