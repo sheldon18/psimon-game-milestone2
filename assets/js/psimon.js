@@ -6,6 +6,7 @@ var id, color, level = 0;
 var playSwitch = false;
 var playSwitch2 = true;
 var strict = false;
+var error = false;
 
 $(document).ready(function() {
     $(".switch").click(function() {    
@@ -20,6 +21,7 @@ $(document).ready(function() {
           $(".inner-switch").removeClass("inner-off");
           $(".switch").removeClass("outer-on");
           $(".score").text("--");
+          $(".score").text(" ");
         }    
     });
     
@@ -87,10 +89,10 @@ function playerSequence() {
         addClass(id, color);
         
         if(!playerCorrect()) {
-            if(strict) {
-            console.log("strict");
-            compSeq = [];
-            level = 1;
+            if (strict) {
+                console.log("strict");
+                compSeq = [];
+                level = 1;
             }
             displayError();
             playerSeq = [];
@@ -117,7 +119,12 @@ function playerSequence() {
 function compSequence() {
     console.log(level);
     $(".score").text(level);
-    getRandomNum();
+    if (!error) {
+        getRandomNum();
+    }
+    if (error && strict) {
+        getRandomNum();
+    }  
     var p = 0;
     var myInterval = setInterval(function() {
         id = compSeq[p];
@@ -165,11 +172,14 @@ function displayError() {
         $(".score").text(":(");
         counter++;
         if(counter == 3) {
-            $(".display").text(level);
+            $(".score").text(level);
             clearInterval(myError);
             playerSeq = [];
             counter = 0;
         }
-    }, 500);
+    },  500);
 }
 
+
+
+//error and strict variables and function code taken from codepen solutions
