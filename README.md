@@ -72,6 +72,7 @@ __How can they achieve this?__
 - __W3C CSS Validation Service__ used to validate CSS code by direct input.
 - __Chrome dev tools__ and __Mozilla inspect element tool__ used for testing HTML and CSS.
 - Browser __console log__ used for testing JavaScript and sequencing.
+- JSHint used to tidy up psimon.js
 
 
 #### User Testing

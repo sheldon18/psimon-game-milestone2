@@ -15,7 +15,7 @@ $(document).ready(function() {
         if(playSwitch) {
           $(".inner-switch").addClass("inner-off");
           $(".switch").addClass("outer-on");
-          $(".score").text("00")
+          $(".score").text("00");
         }
         else {
           $(".inner-switch").removeClass("inner-off");
@@ -35,14 +35,14 @@ $(document).ready(function() {
         else {
           $(".inner-switch").addClass("inner-off");
           $(".switch").addClass("outer-on");
-          $(".score").text("00")
+          $(".score").text("00");
         }    
     });
   
     $(".start").click(function() {
         $(".inner-switch").addClass("inner-off");
         $(".switch").addClass("outer-on");
-        $(".score").text("00")
+        $(".score").text("00");
         console.log(playSwitch);
         strict = false;
         level = 0;
@@ -65,11 +65,11 @@ $(document).ready(function() {
     $(".strict").click(function() {
         $(".inner-switch").addClass("inner-off");
         $(".switch").addClass("outer-on");
-        $(".score").text("00")
+        $(".score").text("00");
         strict = true;  
         level = 0;
         level++;
-        compSeq = []
+        compSeq = [];
         playerSeq = [];
         compSequence();
   });
