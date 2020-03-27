@@ -52,7 +52,7 @@ __How can they achieve this?__
 
 <p align="center"><img src="https://user-images.githubusercontent.com/44424348/77587948-c6ff3380-6f4d-11ea-8494-c225734a040f.JPG" /></p>
 
-![psimonwindowview](https://user-images.githubusercontent.com/44424348/77587960-cb2b5100-6f4d-11ea-9694-0fdec6ff0622.JPG)
+<p align="center"><img src="https://user-images.githubusercontent.com/44424348/77587960-cb2b5100-6f4d-11ea-9694-0fdec6ff0622.JPG" /></p>
 
 
 ## Technologies and External APIs
@@ -83,15 +83,15 @@ __How can they achieve this?__
 - If player click buttons in same order of computer's sequence, then game progress to next level and next level computer's sequence starts
 - If player click buttons in incorrect order, as soon as first incorrect button is pressed, the display depicts :( temporarily, thus requesting play to try same level again.
 - if player click STRICT, play switch should toggle to PLAY and game should start (computer's sequence)
-- (If in Strict mode) If player click buttons in incorrect order, as soon as first incorrect button is pressed, the score board displays :( temporarily and game is reset to level 1.
-- If player completes level 20, score board displays :), which means game has been won.
+- (If in Strict mode) If player click buttons in incorrect order, as soon as first incorrect button is pressed, the score board displays __:(__, temporarily and game is reset to level 1.
+- If player completes level 20, score board displays __:)__, which means game has been won.
 
 
 ## Deployment
 
 This project was developed using the AWS Cloud9, and deployed to GitHub.
 
-To deploy this page to GitHub I did the following:
+To deploy this page to GitHub, the following was done:
 1. Logged into __GitHub__
 2. Clicked on _settings_ page of my milestone project repository
 3. In __GitHub Pages__ section, changed Source from __None__ to __Master Branch__
